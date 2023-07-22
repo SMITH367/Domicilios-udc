@@ -1,0 +1,161 @@
+.title-data-location {
+    width: 100%;
+    margin: 10px;
+}
+
+
+.price-delivery-cont p {
+    padding: 10px;
+    font-weight: 600;
+    margin: auto;
+
+}
+
+.price-delivery-value {
+    font-weight: bolder;
+    color: rgb(0, 214, 46);
+}
+
+.package-info {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto 2em auto;
+}
+
+.package-info select {
+    width: 40%;
+    padding: 6px;
+    border: solid #c8c8c8 0.1px;
+}
+
+.contents-package textarea {
+    resize: none;
+    width: 100%;
+    border: solid #c8c8c8 0.1px;
+}
+
+.contents-package {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 25%;
+}
+
+
+.neworder-skip-container {
+    width: 60%;
+    margin: 2em auto auto auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.neworder-skip {
+    cursor: pointer;
+    margin: auto;
+    padding: 6px;
+    width: 10em;
+    color: aliceblue;
+    background-color: rgb(58, 85, 148);
+    border: solid rgb(0, 187, 255) 1px;
+    border-radius: 5px;
+}
+
+
+.resume-order-data-cont {
+    width: 40%;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    margin: 1em auto 1em auto;
+    border: solid #fff;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px rgb(235, 235, 235);
+    background-color: rgb(253, 253, 253);
+}
+
+.resume-order-data-cont p {
+    margin: 1em;
+}
+
+.make-back-cont-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+.back-btn {
+    cursor: pointer;
+    padding: 6px;
+    width: 8em;
+    color: aliceblue;
+    background-color: rgb(58, 85, 148);
+    border: solid rgb(0, 187, 255) 1px;
+    border-radius: 5px;
+}
+
+.new-order-neighborhood {
+    margin:1em auto 1em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-order-neighborhood select {
+    padding: 6px;
+    width: 40%;
+}
+
+
+@media (max-width:820px) {
+
+
+
+    .package-info {
+        width: 90%;
+        margin-top: 1.5em;
+        justify-content: space-between;
+    }
+
+    .package-info select {
+        width: 40%;
+        padding: 5px;
+    }
+
+    .contents-package {
+        width: 100%;
+        margin: 1em auto 1em auto;
+    }
+
+    .contents-package textarea {
+        resize: none;
+        width: 70%;
+    }
+
+    .resume-order-data-cont {
+        width: 95%;
+
+    }
+
+    .neworder-skip-container{
+
+        width: 100%;
+    }
+
+    .make-back-cont-btn {
+
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .new-order-neighborhood select {
+        width: 50%;
+    }
+    
+
+}
