@@ -93,7 +93,7 @@ const TrackOrder = () => {
                       </p>
                     </li>
                     <li className="order-information-el">
-                      <p>Nombre de cliente: {orderInformation.user}</p>
+                      <p>Nombre de cliente: {orderInformation.sender}</p>
                     </li>
 
                     <li className="order-information-el">

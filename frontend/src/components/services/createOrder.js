@@ -73,7 +73,7 @@ const createOrder = async (
                 emailUser: emailUser,
             };
 
-            const url = "https://tired-hare-getup.cyclic.app/orders/create";
+            const url = "http://localhost:3000/orders/create";
             const fetch = new FetchData(url);
 
             const dataOrder = await fetch.FetchDataApi(orderData, "POST");

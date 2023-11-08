@@ -11,11 +11,11 @@ const OrderDeliveryDetails = ({ orderNumber, userName }) => {
   const token = localStorage.getItem("token");
   const [orderData, setOrderData] = useState(null);
   const userData = useUser();
-  const url = "https://tired-hare-getup.cyclic.app/orders/deliveryMan/" + orderNumber;
+  const url = "http://localhost:3000/orders/deliveryMan/" + orderNumber;
   useEffect(() => {
     const getOrder = async () => {
       const dataOrder = await getOrderData(url, userData.email);
-      dataOrder.order.userName = dataOrder.user;
+      dataOrder.order.userName = dataOrder.sender;
       dataOrder.order.phoneNumber = dataOrder.phone;
 
       setOrderData(dataOrder.order);

@@ -23,7 +23,7 @@ const OrderDeliveryDetailsView = ({ orderData, userType, deliveryManInf }) => {
               <>
                 <p>
                   {" "}
-                  <span>Cliente: {orderData.user}</span>
+                  <span>Cliente: {orderData.sender}</span>
                 </p>
               </>
             )}
