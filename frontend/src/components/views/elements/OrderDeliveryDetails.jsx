@@ -11,7 +11,7 @@ const OrderDeliveryDetails = ({ orderNumber, userName }) => {
   const token = localStorage.getItem("token");
   const [orderData, setOrderData] = useState(null);
   const userData = useUser();
-  const url = "http://localhost:3000/orders/deliveryMan/" + orderNumber;
+  const url = "https://tired-hare-getup.cyclic.app/orders/deliveryMan/" + orderNumber;
   useEffect(() => {
     const getOrder = async () => {
       const dataOrder = await getOrderData(url, userData.email);

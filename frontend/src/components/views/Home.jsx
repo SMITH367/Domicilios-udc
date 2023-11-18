@@ -30,7 +30,7 @@ const Home = () => {
         </section>
 
         <footer className="center footer">
-          Powered with ❤️ by KANDB software solutions
+          Powered with ❤️ by KBGF software solutions
         </footer>
       </div>
     </>
