@@ -24,7 +24,7 @@ const DashboardDeliveryMan = () => {
     };
     getOrders();
 
-    socket.on("cancelOrder",(text)=>{
+    socket.on("updateState",(text)=>{
       console.log(text)
       if(text === `cancel ${orderInDelivery}`){
         localStorage.removeItem("proccess-order")

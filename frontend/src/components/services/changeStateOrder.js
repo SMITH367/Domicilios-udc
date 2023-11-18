@@ -10,8 +10,7 @@ const emitChangeState = () => {
 };
 
 const emmitCancelOrder = (orderNumber) => {
-    console.log("he emitido")
-    socket.emit("cancelOrder", orderNumber)
+    socket.emit("updateState", `cancel ${orderNumber}`)
 }
 
 const changeStateOrder = async (e, orderNumber, stateNumber, priceOfDelivery = 0, deliveryManEmail, token) => {
