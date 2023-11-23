@@ -55,13 +55,13 @@ const Login = ({ setUserDataStatus }) => {
                 Iniciar sesión
               </button>
             </form>
-
+{/* 
             <p className="center mt-1em">
               ¿No tienes cuenta? Regístrate{" "}
               <Link to="/registro" style={{ color: "#5f97ff" }}>
                 aqui
               </Link>
-            </p>
+            </p> */}
 
             <p className="center toDeliveryLogin">
               ¿Eres domiciliario? entra{" "}
