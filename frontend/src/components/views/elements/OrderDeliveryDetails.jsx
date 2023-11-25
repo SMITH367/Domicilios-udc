@@ -15,10 +15,18 @@ const OrderDeliveryDetails = ({ orderNumber, userName }) => {
   useEffect(() => {
     const getOrder = async () => {
       const dataOrder = await getOrderData(url, userData.email);
-      dataOrder.order.userName = dataOrder.sender;
-      dataOrder.order.phoneNumber = dataOrder.phone;
+      
+      console.log(dataOrder)
+      if(dataOrder.order.state !== 0){
+        dataOrder.order.userName = dataOrder.sender;
+        dataOrder.order.phoneNumber = dataOrder.phone;
+        setOrderData(dataOrder.order);
+      } else {
+        localStorage.removeItem("proccess-order")
+        alert("El usuario cancelo la orden")
 
-      setOrderData(dataOrder.order);
+      }
+      
     };
     getOrder();
   }, [getOrderData, url, userData.email]);

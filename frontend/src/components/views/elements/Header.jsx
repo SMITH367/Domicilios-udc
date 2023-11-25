@@ -26,12 +26,10 @@ const Header = ({ setUserDataStatus }) => {
   return (
     <header className="header">
       <nav className="nav">
-        <div>
           <Link className="logo" to="/">
             <img src={icon} alt="" />
           </Link>
-        </div>
-
+ 
         <button onClick={toogleHeader} className="toogle-init">
           &#9776;
         </button>
