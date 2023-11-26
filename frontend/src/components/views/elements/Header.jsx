@@ -73,7 +73,7 @@ const Header = ({ setUserDataStatus }) => {
 
           {login === "true" && typeUser === "admin" && (
             <li className="nav-menu-item">
-              <Link to="/registro">Registrar usuarios</Link>
+              <Link to="/registro">Registrar clientes</Link>
             </li>
           )}
 

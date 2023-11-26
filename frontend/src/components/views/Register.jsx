@@ -17,11 +17,11 @@ const Register = ({ setUserDataStatus }) => {
   return (
     <>
       {userData.login !== "true" ||
-        (userData.typeUser !== "user" && <Navigate to="/login"></Navigate>)}
+        (userData.typeUser !== "admin" && <Navigate to="/login"></Navigate>)}
       <p>.</p>
 
       <div className="container">
-        <h1 className="center">Regístrate</h1>
+        <h1 className="center">Registro de clientes</h1>
         <form className="form center">
           <input
             type="number"
@@ -76,16 +76,9 @@ const Register = ({ setUserDataStatus }) => {
               )
             }
           >
-            Registrarse
+            Registrar
           </button>
         </form>
-
-        <p className="center">
-          ¿Ya tienes cuenta? Inicia sesión{" "}
-          <Link to="/login" style={{ color: "#5f97ff" }}>
-            aqui
-          </Link>
-        </p>
       </div>
     </>
   );
