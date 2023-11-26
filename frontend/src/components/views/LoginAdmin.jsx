@@ -1,10 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { loginSesion } from "../services/loginSesion";
 import useUser from "../../hooks/useUser";
 import { Navigate } from "react-router";
 import { Link } from "react-router-dom";
 import { useValidateLogin } from "../../hooks/useValidateLogin";
-import installApliction from "../services/installAplication";
 import "./styles/forms.css";
 
 const LoginAdmin = ({ setUserDataStatus }) => {
@@ -13,14 +12,7 @@ const LoginAdmin = ({ setUserDataStatus }) => {
   const [password, setPassword] = useState();
   const validation = useValidateLogin(userData);
 
-  const installButton = useRef(null);
 
-  installApliction(installButton);
-
-  window.addEventListener("appinstalled", (evt) => {
-    installButton.current.hidden = true;
-    console.log("running");
-  });
 
   return (
     <>

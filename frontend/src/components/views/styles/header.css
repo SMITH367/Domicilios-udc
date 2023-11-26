@@ -97,7 +97,6 @@
 
     .header {
         height: 75px;
-
     }
 
     .logo {
@@ -108,7 +107,6 @@
         margin: 0;
         width:40%;
     }
-
 
     .nav-menu {
         flex-direction: column;

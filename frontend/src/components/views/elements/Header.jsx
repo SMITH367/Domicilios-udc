@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import useUser from "../../../hooks/useUser";
 import { Link } from "react-router-dom";
 import { closeSesion } from "../../services/closeSesion";
-import installApliction from "../../services/installAplication";
 import "../styles/header.css";
 import icon from "../sources/icon.jpg";
 
@@ -13,15 +12,6 @@ const Header = ({ setUserDataStatus }) => {
   const toogleHeader = () =>
     toogle.current.classList.toggle("nav-phone-visible");
   const handleMenu = () => toogle.current.classList.toggle("nav-phone-visible");
-
-  const installButton = useRef(null);
-
-  installApliction(installButton);
-
-  window.addEventListener("appinstalled", (evt) => {
-    installButton.current.hidden = true;
-    console.log("running");
-  });
 
   return (
     <header className="header">
@@ -81,20 +71,14 @@ const Header = ({ setUserDataStatus }) => {
             </li>
           )}
 
-          {login !== "true" && (
+          {login === "true" && typeUser === "admin" && (
             <li className="nav-menu-item">
-              <Link to="/registro">Regístrate</Link>
+              <Link to="/registro">Registrar usuarios</Link>
             </li>
           )}
 
           <li className="nav-menu-item">
             <Link to="/seguimiento">Seguir pedido</Link>
-          </li>
-
-          <li className="nav-menu-item">
-            <button className="buttonSimple" ref={installButton} hidden>
-              Instalar la app
-            </button>
           </li>
 
           {login === "true" && (

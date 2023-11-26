@@ -69,11 +69,7 @@ const Login = ({ setUserDataStatus }) => {
                 aqui
               </Link>
             </p>
-            <div className="button-installer-cont center">
-              <p ref={installButton} className="button-installer" hidden>
-                Instala la app
-              </p>
-            </div>
+
           </div>
         </>
       )}
